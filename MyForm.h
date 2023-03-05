@@ -39,14 +39,67 @@ namespace CellularAutomaton {
 	private: System::Windows::Forms::Button^ buttonSS;
 	private: System::Windows::Forms::NumericUpDown^ numRule;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
-
+	private: System::Windows::Forms::DataGridView^ dataGridView1;
+	private: System::Windows::Forms::Timer^ timer1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column4;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column5;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column6;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column7;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column8;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column9;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column10;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column11;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column12;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column13;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column14;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column15;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column16;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column17;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column18;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column19;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column20;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column21;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column22;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column23;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column24;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column25;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column26;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column27;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column28;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column29;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column30;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column31;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column32;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column33;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column34;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column35;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column36;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column37;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column38;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column39;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column40;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column41;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column42;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column43;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column44;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column45;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column46;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column47;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column48;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column49;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column50;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column51;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column52;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column53;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column54;
+	private: System::ComponentModel::IContainer^ components;
 	private:
 		/// <summary>
 		/// ќб€зательна€ переменна€ конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
-
 #pragma region Windows Form Designer generated code
 		/// <summary>
 		/// “ребуемый метод дл€ поддержки конструктора Ч не измен€йте 
@@ -54,14 +107,70 @@ namespace CellularAutomaton {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->components = (gcnew System::ComponentModel::Container());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->buttonSS = (gcnew System::Windows::Forms::Button());
 			this->numRule = (gcnew System::Windows::Forms::NumericUpDown());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column6 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column7 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column8 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column9 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column10 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column11 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column12 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column13 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column14 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column15 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column16 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column17 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column18 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column19 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column20 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column21 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column22 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column23 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column24 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column25 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column26 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column27 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column28 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column29 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column30 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column31 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column32 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column33 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column34 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column35 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column36 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column37 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column38 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column39 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column40 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column41 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column42 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column43 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column44 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column45 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column46 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column47 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column48 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column49 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column50 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column51 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column52 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column53 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column54 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numRule))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// groupBox1
@@ -112,32 +221,442 @@ namespace CellularAutomaton {
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Rule";
 			// 
-			// pictureBox1
+			// dataGridView1
 			// 
-			this->pictureBox1->Location = System::Drawing::Point(314, 22);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(1506, 840);
-			this->pictureBox1->TabIndex = 1;
-			this->pictureBox1->TabStop = false;
+			this->dataGridView1->AllowUserToAddRows = false;
+			this->dataGridView1->AllowUserToDeleteRows = false;
+			this->dataGridView1->AllowUserToResizeColumns = false;
+			this->dataGridView1->AllowUserToResizeRows = false;
+			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->ColumnHeadersVisible = false;
+			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(54) {
+				this->Column1,
+					this->Column2, this->Column3, this->Column4, this->Column5, this->Column6, this->Column7, this->Column8, this->Column9, this->Column10,
+					this->Column11, this->Column12, this->Column13, this->Column14, this->Column15, this->Column16, this->Column17, this->Column18,
+					this->Column19, this->Column20, this->Column21, this->Column22, this->Column23, this->Column24, this->Column25, this->Column26,
+					this->Column27, this->Column28, this->Column29, this->Column30, this->Column31, this->Column32, this->Column33, this->Column34,
+					this->Column35, this->Column36, this->Column37, this->Column38, this->Column39, this->Column40, this->Column41, this->Column42,
+					this->Column43, this->Column44, this->Column45, this->Column46, this->Column47, this->Column48, this->Column49, this->Column50,
+					this->Column51, this->Column52, this->Column53, this->Column54
+			});
+			this->dataGridView1->Location = System::Drawing::Point(303, 12);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->RowHeadersVisible = false;
+			this->dataGridView1->RowHeadersWidth = 51;
+			this->dataGridView1->RowTemplate->Height = 24;
+			this->dataGridView1->RowTemplate->ReadOnly = true;
+			this->dataGridView1->ScrollBars = System::Windows::Forms::ScrollBars::None;
+			this->dataGridView1->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::CellSelect;
+			this->dataGridView1->Size = System::Drawing::Size(1517, 860);
+			this->dataGridView1->TabIndex = 1;
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellContentClick);
+			// 
+			// Column1
+			// 
+			this->Column1->HeaderText = L"Column1";
+			this->Column1->MinimumWidth = 6;
+			this->Column1->Name = L"Column1";
+			this->Column1->Width = 6;
+			// 
+			// Column2
+			// 
+			this->Column2->HeaderText = L"Column2";
+			this->Column2->MinimumWidth = 6;
+			this->Column2->Name = L"Column2";
+			this->Column2->Width = 6;
+			// 
+			// Column3
+			// 
+			this->Column3->HeaderText = L"Column3";
+			this->Column3->MinimumWidth = 6;
+			this->Column3->Name = L"Column3";
+			this->Column3->Width = 6;
+			// 
+			// Column4
+			// 
+			this->Column4->HeaderText = L"Column4";
+			this->Column4->MinimumWidth = 6;
+			this->Column4->Name = L"Column4";
+			this->Column4->Width = 6;
+			// 
+			// Column5
+			// 
+			this->Column5->HeaderText = L"Column5";
+			this->Column5->MinimumWidth = 6;
+			this->Column5->Name = L"Column5";
+			this->Column5->Width = 6;
+			// 
+			// Column6
+			// 
+			this->Column6->HeaderText = L"Column6";
+			this->Column6->MinimumWidth = 6;
+			this->Column6->Name = L"Column6";
+			this->Column6->Width = 6;
+			// 
+			// Column7
+			// 
+			this->Column7->HeaderText = L"Column7";
+			this->Column7->MinimumWidth = 6;
+			this->Column7->Name = L"Column7";
+			this->Column7->Width = 6;
+			// 
+			// Column8
+			// 
+			this->Column8->HeaderText = L"Column8";
+			this->Column8->MinimumWidth = 6;
+			this->Column8->Name = L"Column8";
+			this->Column8->Width = 6;
+			// 
+			// Column9
+			// 
+			this->Column9->HeaderText = L"Column9";
+			this->Column9->MinimumWidth = 6;
+			this->Column9->Name = L"Column9";
+			this->Column9->Width = 6;
+			// 
+			// Column10
+			// 
+			this->Column10->HeaderText = L"Column10";
+			this->Column10->MinimumWidth = 6;
+			this->Column10->Name = L"Column10";
+			this->Column10->Width = 6;
+			// 
+			// Column11
+			// 
+			this->Column11->HeaderText = L"Column11";
+			this->Column11->MinimumWidth = 6;
+			this->Column11->Name = L"Column11";
+			this->Column11->Width = 6;
+			// 
+			// Column12
+			// 
+			this->Column12->HeaderText = L"Column12";
+			this->Column12->MinimumWidth = 6;
+			this->Column12->Name = L"Column12";
+			this->Column12->Width = 6;
+			// 
+			// Column13
+			// 
+			this->Column13->HeaderText = L"Column13";
+			this->Column13->MinimumWidth = 6;
+			this->Column13->Name = L"Column13";
+			this->Column13->Width = 6;
+			// 
+			// Column14
+			// 
+			this->Column14->HeaderText = L"Column14";
+			this->Column14->MinimumWidth = 6;
+			this->Column14->Name = L"Column14";
+			this->Column14->Width = 6;
+			// 
+			// Column15
+			// 
+			this->Column15->HeaderText = L"Column15";
+			this->Column15->MinimumWidth = 6;
+			this->Column15->Name = L"Column15";
+			this->Column15->Width = 6;
+			// 
+			// Column16
+			// 
+			this->Column16->HeaderText = L"Column16";
+			this->Column16->MinimumWidth = 6;
+			this->Column16->Name = L"Column16";
+			this->Column16->Width = 6;
+			// 
+			// Column17
+			// 
+			this->Column17->HeaderText = L"Column17";
+			this->Column17->MinimumWidth = 6;
+			this->Column17->Name = L"Column17";
+			this->Column17->Width = 6;
+			// 
+			// Column18
+			// 
+			this->Column18->HeaderText = L"Column18";
+			this->Column18->MinimumWidth = 6;
+			this->Column18->Name = L"Column18";
+			this->Column18->Width = 6;
+			// 
+			// Column19
+			// 
+			this->Column19->HeaderText = L"Column19";
+			this->Column19->MinimumWidth = 6;
+			this->Column19->Name = L"Column19";
+			this->Column19->Width = 6;
+			// 
+			// Column20
+			// 
+			this->Column20->HeaderText = L"Column20";
+			this->Column20->MinimumWidth = 6;
+			this->Column20->Name = L"Column20";
+			this->Column20->Width = 6;
+			// 
+			// Column21
+			// 
+			this->Column21->HeaderText = L"Column21";
+			this->Column21->MinimumWidth = 6;
+			this->Column21->Name = L"Column21";
+			this->Column21->Width = 6;
+			// 
+			// Column22
+			// 
+			this->Column22->HeaderText = L"Column22";
+			this->Column22->MinimumWidth = 6;
+			this->Column22->Name = L"Column22";
+			this->Column22->Width = 6;
+			// 
+			// Column23
+			// 
+			this->Column23->HeaderText = L"Column23";
+			this->Column23->MinimumWidth = 6;
+			this->Column23->Name = L"Column23";
+			this->Column23->Width = 6;
+			// 
+			// Column24
+			// 
+			this->Column24->HeaderText = L"Column24";
+			this->Column24->MinimumWidth = 6;
+			this->Column24->Name = L"Column24";
+			this->Column24->Width = 6;
+			// 
+			// Column25
+			// 
+			this->Column25->HeaderText = L"Column25";
+			this->Column25->MinimumWidth = 6;
+			this->Column25->Name = L"Column25";
+			this->Column25->Width = 6;
+			// 
+			// Column26
+			// 
+			this->Column26->HeaderText = L"Column26";
+			this->Column26->MinimumWidth = 6;
+			this->Column26->Name = L"Column26";
+			this->Column26->Width = 6;
+			// 
+			// Column27
+			// 
+			this->Column27->HeaderText = L"Column27";
+			this->Column27->MinimumWidth = 6;
+			this->Column27->Name = L"Column27";
+			this->Column27->Width = 6;
+			// 
+			// Column28
+			// 
+			this->Column28->HeaderText = L"Column28";
+			this->Column28->MinimumWidth = 6;
+			this->Column28->Name = L"Column28";
+			this->Column28->Width = 6;
+			// 
+			// Column29
+			// 
+			this->Column29->HeaderText = L"Column29";
+			this->Column29->MinimumWidth = 6;
+			this->Column29->Name = L"Column29";
+			this->Column29->Width = 6;
+			// 
+			// Column30
+			// 
+			this->Column30->HeaderText = L"Column30";
+			this->Column30->MinimumWidth = 6;
+			this->Column30->Name = L"Column30";
+			this->Column30->Width = 6;
+			// 
+			// Column31
+			// 
+			this->Column31->HeaderText = L"Column31";
+			this->Column31->MinimumWidth = 6;
+			this->Column31->Name = L"Column31";
+			this->Column31->Width = 6;
+			// 
+			// Column32
+			// 
+			this->Column32->HeaderText = L"Column32";
+			this->Column32->MinimumWidth = 6;
+			this->Column32->Name = L"Column32";
+			this->Column32->Width = 6;
+			// 
+			// Column33
+			// 
+			this->Column33->HeaderText = L"Column33";
+			this->Column33->MinimumWidth = 6;
+			this->Column33->Name = L"Column33";
+			this->Column33->Width = 6;
+			// 
+			// Column34
+			// 
+			this->Column34->HeaderText = L"Column34";
+			this->Column34->MinimumWidth = 6;
+			this->Column34->Name = L"Column34";
+			this->Column34->Width = 6;
+			// 
+			// Column35
+			// 
+			this->Column35->HeaderText = L"Column35";
+			this->Column35->MinimumWidth = 6;
+			this->Column35->Name = L"Column35";
+			this->Column35->Width = 6;
+			// 
+			// Column36
+			// 
+			this->Column36->HeaderText = L"Column36";
+			this->Column36->MinimumWidth = 6;
+			this->Column36->Name = L"Column36";
+			this->Column36->Width = 6;
+			// 
+			// Column37
+			// 
+			this->Column37->HeaderText = L"Column37";
+			this->Column37->MinimumWidth = 6;
+			this->Column37->Name = L"Column37";
+			this->Column37->Width = 6;
+			// 
+			// Column38
+			// 
+			this->Column38->HeaderText = L"Column38";
+			this->Column38->MinimumWidth = 6;
+			this->Column38->Name = L"Column38";
+			this->Column38->Width = 6;
+			// 
+			// Column39
+			// 
+			this->Column39->HeaderText = L"Column39";
+			this->Column39->MinimumWidth = 6;
+			this->Column39->Name = L"Column39";
+			this->Column39->Width = 6;
+			// 
+			// Column40
+			// 
+			this->Column40->HeaderText = L"Column40";
+			this->Column40->MinimumWidth = 6;
+			this->Column40->Name = L"Column40";
+			this->Column40->Width = 6;
+			// 
+			// Column41
+			// 
+			this->Column41->HeaderText = L"Column41";
+			this->Column41->MinimumWidth = 6;
+			this->Column41->Name = L"Column41";
+			this->Column41->Width = 6;
+			// 
+			// Column42
+			// 
+			this->Column42->HeaderText = L"Column42";
+			this->Column42->MinimumWidth = 6;
+			this->Column42->Name = L"Column42";
+			this->Column42->Width = 6;
+			// 
+			// Column43
+			// 
+			this->Column43->HeaderText = L"Column43";
+			this->Column43->MinimumWidth = 6;
+			this->Column43->Name = L"Column43";
+			this->Column43->Width = 6;
+			// 
+			// Column44
+			// 
+			this->Column44->HeaderText = L"Column44";
+			this->Column44->MinimumWidth = 6;
+			this->Column44->Name = L"Column44";
+			this->Column44->Width = 6;
+			// 
+			// Column45
+			// 
+			this->Column45->HeaderText = L"Column45";
+			this->Column45->MinimumWidth = 6;
+			this->Column45->Name = L"Column45";
+			this->Column45->Width = 6;
+			// 
+			// Column46
+			// 
+			this->Column46->HeaderText = L"Column46";
+			this->Column46->MinimumWidth = 6;
+			this->Column46->Name = L"Column46";
+			this->Column46->Width = 6;
+			// 
+			// Column47
+			// 
+			this->Column47->HeaderText = L"Column47";
+			this->Column47->MinimumWidth = 6;
+			this->Column47->Name = L"Column47";
+			this->Column47->Width = 6;
+			// 
+			// Column48
+			// 
+			this->Column48->HeaderText = L"Column48";
+			this->Column48->MinimumWidth = 6;
+			this->Column48->Name = L"Column48";
+			this->Column48->Width = 6;
+			// 
+			// Column49
+			// 
+			this->Column49->HeaderText = L"Column49";
+			this->Column49->MinimumWidth = 6;
+			this->Column49->Name = L"Column49";
+			this->Column49->Width = 6;
+			// 
+			// Column50
+			// 
+			this->Column50->HeaderText = L"Column50";
+			this->Column50->MinimumWidth = 6;
+			this->Column50->Name = L"Column50";
+			this->Column50->Width = 6;
+			// 
+			// Column51
+			// 
+			this->Column51->HeaderText = L"Column51";
+			this->Column51->MinimumWidth = 6;
+			this->Column51->Name = L"Column51";
+			this->Column51->Width = 6;
+			// 
+			// Column52
+			// 
+			this->Column52->HeaderText = L"Column52";
+			this->Column52->MinimumWidth = 6;
+			this->Column52->Name = L"Column52";
+			this->Column52->Width = 6;
+			// 
+			// Column53
+			// 
+			this->Column53->HeaderText = L"Column53";
+			this->Column53->MinimumWidth = 6;
+			this->Column53->Name = L"Column53";
+			this->Column53->Width = 6;
+			// 
+			// Column54
+			// 
+			this->Column54->HeaderText = L"Column54";
+			this->Column54->MinimumWidth = 6;
+			this->Column54->Name = L"Column54";
+			this->Column54->Width = 6;
+			// 
+			// timer1
+			// 
+			this->timer1->Tick += gcnew System::EventHandler(this, &MyForm::timer1_Tick);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1832, 874);
-			this->Controls->Add(this->pictureBox1);
+			this->ClientSize = System::Drawing::Size(1832, 904);
+			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->groupBox1);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numRule))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
+		private: int BCount = 0;
 	private: System::Void buttonSS_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e);
+private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e);
+private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e);
 };
 }

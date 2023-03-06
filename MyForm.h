@@ -1,5 +1,6 @@
 #pragma once
-
+using namespace std;
+#include <string>
 namespace CellularAutomaton {
 
 	using namespace System;
@@ -632,6 +633,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column54;
 			// 
 			// timer1
 			// 
+			this->timer1->Interval = 1000;
 			this->timer1->Tick += gcnew System::EventHandler(this, &MyForm::timer1_Tick);
 			// 
 			// MyForm
@@ -653,8 +655,12 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column54;
 
 		}
 #pragma endregion
-		private: int BCount = 0;
-	private: System::Void buttonSS_Click(System::Object^ sender, System::EventArgs^ e);
+	private: int BCount = 0;
+	private: int RuleNumber;
+Void Rule();
+string dec2bin(int num);
+Void Draw(bool array[54]);
+private: System::Void buttonSS_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e);
 private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e);
 private: System::Void dataGridView1_CellClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e);

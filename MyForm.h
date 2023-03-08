@@ -659,7 +659,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column54;
 	private: int RuleNumber;
 Void Rule();
 string dec2bin(int num);
-Void Draw(bool array[54]);
+Void Draw(bool* pointer);
 private: System::Void buttonSS_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e);
 private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e);

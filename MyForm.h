@@ -41,7 +41,7 @@ namespace CellularAutomaton {
 	private: System::Windows::Forms::NumericUpDown^ numRule;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
-	private: System::Windows::Forms::Timer^ timer1;
+
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
@@ -108,7 +108,6 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column54;
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = (gcnew System::ComponentModel::Container());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->buttonSS = (gcnew System::Windows::Forms::Button());
 			this->numRule = (gcnew System::Windows::Forms::NumericUpDown());
@@ -168,7 +167,6 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column54;
 			this->Column52 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column53 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column54 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numRule))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
@@ -631,11 +629,6 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column54;
 			this->Column54->Name = L"Column54";
 			this->Column54->Width = 6;
 			// 
-			// timer1
-			// 
-			this->timer1->Interval = 1000;
-			this->timer1->Tick += gcnew System::EventHandler(this, &MyForm::timer1_Tick);
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -659,9 +652,8 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column54;
 	private: int RuleNumber;
 Void Rule();
 string dec2bin(int num);
-Void Draw(bool* pointer);
+Void Draw(bool* pointer, bool* pointerT);
 private: System::Void buttonSS_Click(System::Object^ sender, System::EventArgs^ e);
-private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e);
 private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e);
 private: System::Void dataGridView1_CellClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e);
 };
